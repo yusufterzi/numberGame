@@ -17,6 +17,13 @@
 		2EEB5EC224C9E45000A8FBD8 /* OldAnswersTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEB5EC124C9E45000A8FBD8 /* OldAnswersTableModel.swift */; };
 		2EEB5EC624C9E59700A8FBD8 /* TypeAliaes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEB5EC524C9E59700A8FBD8 /* TypeAliaes.swift */; };
 		2EEB5EC824C9F74F00A8FBD8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EEB5EC724C9F74F00A8FBD8 /* GoogleService-Info.plist */; };
+		2EEB5ECD24C9FAF200A8FBD8 /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEB5ECB24C9FAF200A8FBD8 /* AnswerCell.swift */; };
+		2EEB5ECE24C9FAF200A8FBD8 /* AnswerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EEB5ECC24C9FAF200A8FBD8 /* AnswerCell.xib */; };
+		2EEB5ED024C9FD9C00A8FBD8 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEB5ECF24C9FD9C00A8FBD8 /* NibLoadable.swift */; };
+		2EEB5ED224C9FDE900A8FBD8 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEB5ED124C9FDE900A8FBD8 /* UITableViewCell+Extension.swift */; };
+		2EEB5ED424C9FE0400A8FBD8 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEB5ED324C9FE0400A8FBD8 /* UITableView+Extensions.swift */; };
+		2EEB5ED624C9FFC200A8FBD8 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEB5ED524C9FFC200A8FBD8 /* GameModel.swift */; };
+		2EEB5ED824CA036B00A8FBD8 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEB5ED724CA036B00A8FBD8 /* String+Extension.swift */; };
 		7E382511BB822AB9D4DB0CDA /* libPods-Number Game.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FDBE725C5C9C09555727AA /* libPods-Number Game.a */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +40,13 @@
 		2EEB5EC124C9E45000A8FBD8 /* OldAnswersTableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldAnswersTableModel.swift; sourceTree = "<group>"; };
 		2EEB5EC524C9E59700A8FBD8 /* TypeAliaes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAliaes.swift; sourceTree = "<group>"; };
 		2EEB5EC724C9F74F00A8FBD8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2EEB5ECB24C9FAF200A8FBD8 /* AnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
+		2EEB5ECC24C9FAF200A8FBD8 /* AnswerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnswerCell.xib; sourceTree = "<group>"; };
+		2EEB5ECF24C9FD9C00A8FBD8 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		2EEB5ED124C9FDE900A8FBD8 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		2EEB5ED324C9FE0400A8FBD8 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		2EEB5ED524C9FFC200A8FBD8 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		2EEB5ED724CA036B00A8FBD8 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		847449E3750BA15B6A32AA29 /* Pods-Number Game.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Number Game.debug.xcconfig"; path = "Target Support Files/Pods-Number Game/Pods-Number Game.debug.xcconfig"; sourceTree = "<group>"; };
 		987C24501C65223A062E5B05 /* Pods-Number Game.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Number Game.release.xcconfig"; path = "Target Support Files/Pods-Number Game/Pods-Number Game.release.xcconfig"; sourceTree = "<group>"; };
 		B5FDBE725C5C9C09555727AA /* libPods-Number Game.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Number Game.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +119,7 @@
 			children = (
 				2EEB5EBD24C9E38D00A8FBD8 /* Table */,
 				2EEB5EBB24C9E10000A8FBD8 /* GameController.swift */,
+				2EEB5ED524C9FFC200A8FBD8 /* GameModel.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -112,6 +127,7 @@
 		2EEB5EBD24C9E38D00A8FBD8 /* Table */ = {
 			isa = PBXGroup;
 			children = (
+				2EEB5EC924C9FACA00A8FBD8 /* AnswerCell */,
 				2EEB5EC024C9E43A00A8FBD8 /* Model */,
 				2EEB5EBE24C9E3CC00A8FBD8 /* OldAnswersTable.swift */,
 			);
@@ -130,8 +146,21 @@
 			isa = PBXGroup;
 			children = (
 				2EEB5EC524C9E59700A8FBD8 /* TypeAliaes.swift */,
+				2EEB5ECF24C9FD9C00A8FBD8 /* NibLoadable.swift */,
+				2EEB5ED124C9FDE900A8FBD8 /* UITableViewCell+Extension.swift */,
+				2EEB5ED324C9FE0400A8FBD8 /* UITableView+Extensions.swift */,
+				2EEB5ED724CA036B00A8FBD8 /* String+Extension.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2EEB5EC924C9FACA00A8FBD8 /* AnswerCell */ = {
+			isa = PBXGroup;
+			children = (
+				2EEB5ECC24C9FAF200A8FBD8 /* AnswerCell.xib */,
+				2EEB5ECB24C9FAF200A8FBD8 /* AnswerCell.swift */,
+			);
+			path = AnswerCell;
 			sourceTree = "<group>";
 		};
 		A2E4624B9EAF9B2BFABBF76E /* Frameworks */ = {
@@ -148,7 +177,6 @@
 				847449E3750BA15B6A32AA29 /* Pods-Number Game.debug.xcconfig */,
 				987C24501C65223A062E5B05 /* Pods-Number Game.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,6 +241,7 @@
 			files = (
 				2EEB5EC824C9F74F00A8FBD8 /* GoogleService-Info.plist in Resources */,
 				2EEB5EAF24C9DAD600A8FBD8 /* LaunchScreen.storyboard in Resources */,
+				2EEB5ECE24C9FAF200A8FBD8 /* AnswerCell.xib in Resources */,
 				2EEB5EAC24C9DAD600A8FBD8 /* Assets.xcassets in Resources */,
 				2EEB5EAA24C9DACF00A8FBD8 /* Main.storyboard in Resources */,
 			);
@@ -251,11 +280,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EEB5EC624C9E59700A8FBD8 /* TypeAliaes.swift in Sources */,
+				2EEB5ED024C9FD9C00A8FBD8 /* NibLoadable.swift in Sources */,
 				2EEB5EB824C9E00B00A8FBD8 /* DashboardController.swift in Sources */,
 				2EEB5EBC24C9E10000A8FBD8 /* GameController.swift in Sources */,
+				2EEB5ED824CA036B00A8FBD8 /* String+Extension.swift in Sources */,
+				2EEB5ED224C9FDE900A8FBD8 /* UITableViewCell+Extension.swift in Sources */,
+				2EEB5ED424C9FE0400A8FBD8 /* UITableView+Extensions.swift in Sources */,
 				2EEB5EBF24C9E3CC00A8FBD8 /* OldAnswersTable.swift in Sources */,
+				2EEB5ECD24C9FAF200A8FBD8 /* AnswerCell.swift in Sources */,
 				2EEB5EA324C9DACF00A8FBD8 /* AppDelegate.swift in Sources */,
 				2EEB5EC224C9E45000A8FBD8 /* OldAnswersTableModel.swift in Sources */,
+				2EEB5ED624C9FFC200A8FBD8 /* GameModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

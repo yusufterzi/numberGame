@@ -11,7 +11,7 @@ import UIKit
 class AnswerItem {
     var answer: String = ""
     var answerCorrectness: String = ""
-    var opacity: Int = 1
+    var order: Int = 0
 }
 
 class OldAnswersTableModel {

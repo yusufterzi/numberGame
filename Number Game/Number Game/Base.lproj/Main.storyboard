@@ -84,25 +84,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xtU-jr-QuZ">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="xtU-jr-QuZ">
                                 <rect key="frame" x="132" y="528" width="150" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="SMA-F2-JZC"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                <connections>
+                                    <action selector="answerChanged:" destination="eVg-NK-aKE" eventType="editingChanged" id="HTg-1e-527"/>
+                                </connections>
                             </textField>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DjP-QH-lNY">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DjP-QH-lNY" customClass="OldAnswersTable" customModule="Number_Game" customModuleProvider="target">
                                 <rect key="frame" x="10" y="54" width="394" height="454"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2gk-EX-pXu">
+                                <rect key="frame" x="20" y="742" width="374" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tebrikler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOX-6g-Ee3">
+                                        <rect key="frame" x="153.5" y="8" width="67" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSR-3y-mkv">
+                                        <rect key="frame" x="107" y="40" width="160" height="50"/>
+                                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="tXX-Sr-HUm"/>
+                                            <constraint firstAttribute="width" constant="160" id="zrf-VH-uI8"/>
+                                        </constraints>
+                                        <state key="normal" title="Yeni Oyun">
+                                            <color key="titleColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="newGameTouchUp:" destination="eVg-NK-aKE" eventType="touchUpInside" id="ebO-fK-6Vh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="sSR-3y-mkv" firstAttribute="centerX" secondItem="2gk-EX-pXu" secondAttribute="centerX" id="DqL-l6-Y6f"/>
+                                    <constraint firstAttribute="bottom" secondItem="sSR-3y-mkv" secondAttribute="bottom" constant="10" id="P58-5O-p1m"/>
+                                    <constraint firstItem="AOX-6g-Ee3" firstAttribute="centerX" secondItem="2gk-EX-pXu" secondAttribute="centerX" id="dPm-fh-PYw"/>
+                                    <constraint firstItem="AOX-6g-Ee3" firstAttribute="top" secondItem="2gk-EX-pXu" secondAttribute="top" constant="8" id="ezF-LD-0AH"/>
+                                    <constraint firstAttribute="height" constant="100" id="gw5-M3-cf5"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="DjP-QH-lNY" firstAttribute="top" secondItem="Unx-zf-IhY" secondAttribute="top" constant="10" id="4lG-nM-O0w"/>
                             <constraint firstItem="Unx-zf-IhY" firstAttribute="trailing" secondItem="DjP-QH-lNY" secondAttribute="trailing" constant="10" id="BMf-8a-LPH"/>
+                            <constraint firstItem="2gk-EX-pXu" firstAttribute="leading" secondItem="Unx-zf-IhY" secondAttribute="leading" constant="20" id="DgI-U5-Aph"/>
                             <constraint firstItem="Unx-zf-IhY" firstAttribute="bottom" secondItem="xtU-jr-QuZ" secondAttribute="bottom" constant="300" id="HdF-sf-hsZ"/>
+                            <constraint firstItem="Unx-zf-IhY" firstAttribute="trailing" secondItem="2gk-EX-pXu" secondAttribute="trailing" constant="20" id="MDi-ZJ-rRJ"/>
                             <constraint firstItem="xtU-jr-QuZ" firstAttribute="centerX" secondItem="aOu-Oe-QFD" secondAttribute="centerX" id="XzD-Lh-dpb"/>
+                            <constraint firstItem="Unx-zf-IhY" firstAttribute="bottom" secondItem="2gk-EX-pXu" secondAttribute="bottom" constant="20" id="f5g-KH-ZPd"/>
                             <constraint firstItem="DjP-QH-lNY" firstAttribute="leading" secondItem="Unx-zf-IhY" secondAttribute="leading" constant="10" id="g3h-cL-QHS"/>
                             <constraint firstItem="xtU-jr-QuZ" firstAttribute="top" secondItem="DjP-QH-lNY" secondAttribute="bottom" constant="20" id="gwF-TW-Sed"/>
                         </constraints>
@@ -110,12 +149,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="iAe-YC-btW"/>
                     <connections>
+                        <outlet property="endOfGameView" destination="2gk-EX-pXu" id="oKA-Od-RK4"/>
                         <outlet property="numberTextfield" destination="xtU-jr-QuZ" id="sTW-ia-AKE"/>
+                        <outlet property="tableView" destination="DjP-QH-lNY" id="oVA-iY-wfu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bny-dZ-xTc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="795" y="117"/>
+            <point key="canvasLocation" x="794.20289855072474" y="116.51785714285714"/>
         </scene>
     </scenes>
 </document>
