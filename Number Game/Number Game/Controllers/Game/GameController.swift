@@ -28,6 +28,7 @@ class GameController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         numberTextfield.becomeFirstResponder()
+        navigationController?.navigationBar.isHidden = false
     }
     
     @IBAction func answerChanged(_ sender: Any) {
