@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>134553679542-sf7g7mcjtr5big8v25o7ct1g3c5dkhfj.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.134553679542-sf7g7mcjtr5big8v25o7ct1g3c5dkhfj</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAIqOYP3BxiDC0qgON0ip9ejCl6mbznIsM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>134553679542</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.overgame.Number-Game</string>
+	<key>PROJECT_ID</key>
+	<string>numbergame-500db</string>
+	<key>STORAGE_BUCKET</key>
+	<string>numbergame-500db.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:134553679542:ios:b228593bf05a33ed63d817</string>
+	<key>DATABASE_URL</key>
+	<string>https://numbergame-500db.firebaseio.com</string>
+</dict>
+</plist>
